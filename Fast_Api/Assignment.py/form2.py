@@ -4,7 +4,7 @@ from typing import List, Optional
 
 app = FastAPI()
 
-# Define Pydantic models for body validation
+
 class RegisterStudentModel(BaseModel):
     name: str
     email: str
