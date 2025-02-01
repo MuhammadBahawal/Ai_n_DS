@@ -15,14 +15,13 @@ class UpdateEmailModel(BaseModel):
     email: str
 
 
-# GET /students/{student_id}
 @app.get("/students/{student_id}")
 def get_student(student_id: int, include_grades: bool = False, semester: str = None):
-    # Validate student_id (manually)
+
     if student_id < 1001 or student_id > 9998:
         return {"message": "student_id must be between 1001 and 9998"}
 
-    # Validate semester format (manually)
+
     if semester and semester not in ["Fall2024", "Spring2025", "Summer2025"]:
         return {
             "message": "Invalid semester format. Please use Fall2024, Spring2025, etc."
