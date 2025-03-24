@@ -21,6 +21,7 @@
 - NumPy: Numerical computing  
 - Pandas: Data manipulation and analysis  
 - OpenCV: Computer vision basics and applications  
+- Matplotlib: Computer vision and graphs making
 
 **Model Development Lifecycle**  
 - Model building and training using Keras  
